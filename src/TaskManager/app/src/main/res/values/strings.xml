@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Reminder</string>
+    <string name="delete_button">Delete</string>
+    <string name="menu_title">Add new task</string>
+    <string name="list_name_field">List title</string>
+    <string name="info_app">App for saving tasks</string>
+</resources>
