@@ -1,64 +1,98 @@
-# Task Manager - Java Android Application
+# TaskManagerJavaAndroid - Android Task Management App
 
-## 📚 Project Overview
-The **Task Manager** is an Android application designed to help users **organize tasks, track progress, and manage daily activities efficiently**. Users can create, edit, and delete tasks, and mark them as completed.
+**TaskManagerJavaAndroid** is a simple Android application built with **Java** that allows users to **create, manage, and track tasks**. The application features a minimal user interface and basic task-handling functionality.
 
----
+## 1. How to Download and Run the Project
 
-## 🚀 Features
-✔ **Task creation, editing, and deletion**  
-✔ **Task status tracking (pending/completed)**  
-✔ **User-friendly Android UI**  
-✔ **Lightweight and optimized performance**  
-✔ **Screenshots of test results available in `images/`**  
-✔ **Pre-built APK included for direct installation**  
-✔ **Automated unit tests included**  
+### **Prerequisites**
 
----
+To run this project, you need:
 
-## 📦 System Requirements
+- **Android Studio Flamingo or newer** – Download from [Android Developers](https://developer.android.com/studio)
+- **Android SDK 31+ (API Level 31 or higher)** installed
+- **A physical Android device** or an **Android emulator** (e.g., **Pixel 2 API 31**) set up in Android Studio
 
-### **1️⃣ Android Studio**
-- Download and install **Android Studio**: [Download Here](https://developer.android.com/studio)
-- Open the project in Android Studio and set up the necessary dependencies.
+### **Clone the Repository**
 
-### **2️⃣ Android Device or Emulator**
-- The application can be run on **any Android device** with **Android 5.0 (Lollipop) or higher**.
-- Alternatively, you can use an **Android emulator** in Android Studio.
-
----
-
-## 💻 How to Run the Application
-
-### **Option 1: Running from Android Studio**
-1. Open the project in **Android Studio**.
-2. Connect an Android device via USB **or** set up an emulator.
-3. Click **Run ▶** to build and deploy the app.
-
-### **Option 2: Installing APK Directly**
-1. Navigate to the folder containing the APK file:
+1. **Download the repository**:
+   ```sh
+   git clone https://github.com/illiakovalenkoo/TaskManagerJavaAndroid.git
+   cd TaskManagerJavaAndroid
    ```
-   app/build/outputs/apk/release/app-release.apk
-   ```
-2. Transfer the APK to an Android device.
-3. Open the APK file and install the application.
 
----
+### **Open the Project in Android Studio**
 
-## 📸 Test Screenshots
-All test result screenshots can be found in the **`images/`** directory.
+1. Open **Android Studio**.
+2. Click on **Open** and select the `TaskManagerJavaAndroid` project folder.
+3. Wait for Gradle to sync and install dependencies.
 
----
+### **Run the Application**
 
-## 🛠 Built With
+#### **Option 1: Run on a Physical Device**
+
+1. Connect an Android phone via USB.
+2. Enable **Developer Options** and **USB Debugging** in phone settings.
+3. Click **Run** in Android Studio and select your device.
+
+#### **Option 2: Run on an Emulator**
+
+1. Open **Android Studio** and go to **Device Manager**.
+2. Create a new virtual device (recommended: **Pixel 2 API 31**).
+3. Click **Run** and select the emulator as the target device.
+
+### **Option 3: Install APK on a Device**
+
+If you want to install the pre-built APK file without running the project in Android Studio:
+
+1. **Locate the APK file**:
+   - The signed APK file is available at: `app/build/outputs/apk/release/taskmanager-release.apk`.
+   - If you downloaded it from GitHub Releases, find it in your downloads folder.
+
+2. **Transfer the APK to your phone**:
+   - Connect your device via USB and copy the file.
+   - Or send it via email/cloud storage and download it on your phone.
+
+3. **Enable unknown sources** (only for manual installation):
+   - Go to **Settings > Security > Install unknown apps**.
+   - Allow installation from your file manager or browser.
+
+4. **Install the APK**:
+   - Open the APK file on your phone and tap **Install**.
+
+5. **Run the app** from your home screen.
+
+## 2. First-Time Execution Issues
+
+- **Gradle Sync Failed** – Ensure you have the latest **Android Studio** and Gradle version.
+- **App Crashes on Start** – Ensure you have granted **Storage Permissions** in **Settings > Apps > TaskManager > Permissions** (only needed for external files).
+- **Emulator Runs Slowly** – Enable **Hardware Acceleration** in Android Studio settings.
+- **APK Installation Blocked** – Enable installation from unknown sources in your device settings.
+- **APK Not Found** – Ensure the APK is in the correct location: `app/build/outputs/apk/release/taskmanager-release.apk`.
+
+## 3. Project Structure
+
+```
+│── src/                           # Source code of the application
+│── images/                        # Screenshots and images for documentation
+│── doc/                           # README.md file
+```
+
+## 4. Technologies Used
+
 - **Java (Android SDK)**
-- **Android Studio**
-- **Gradle (Groovy DSL)**
+- **XML (UI Layouts)**
+- **Android Activity Lifecycle** (for managing tasks)
 
----
+## 5. Application Testing
 
-## 🐝 License
-This project is licensed under the **MIT License** – feel free to modify and use it.
+The application has been tested for:
 
-🚀 **Happy coding!**
+- Basic task creation and management functionality
+- Task tracking and deletion
+- App stability on different Android versions (API 29–33)
+- Performance on emulator and real devices
+- APK installation and manual execution
 
+## 6. License
+
+This project is licensed under the **MIT License**. You are free to use, modify, and distribute this software with no restrictions. The software is provided "as is", without warranty of any kind.
